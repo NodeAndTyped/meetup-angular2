@@ -438,6 +438,7 @@ Permet d'utiliser la liste des arguments **proprement**.
 .pull-left[
 #### ES5
 ``` javascript
+var playersInGame = [];
 function addPlayers(players) {
   for (var i = 0; i < arguments.length; i++) {
     playesInGame.push(arguments[i]);
@@ -451,10 +452,12 @@ addPlayers('John', 'Rosa');
 .pull-right[
 #### ES6
 ``` javascript
+const playersInGame = [];
 function addPlayers(...players) {
   for (let player of players) {
     playersInGame.push(player);
   }
+  return list;
 }
 ```
 ]
@@ -570,7 +573,7 @@ class Case {
   	//move, stop...
   }
 }
-class CaseProperty extends case {
+class CaseProperty extends Case {
   constructor(name, price) {
     super(name);
     this.price = price;
@@ -1864,7 +1867,7 @@ export class AppComponent {
 ```
 
 
-> Cannot read property 'name' of undefined in [{{users.name}} in PonyRacerAppComponent]
+> Cannot read property 'name' of undefined in [{{users.name}} in AppComponent]
 ]
 ???
 L'IDE ne detectera pas le fait que l'objet users n'existe pas dans l'expression du template. 
@@ -1993,7 +1996,7 @@ export class AppComponent {}
 <div [hidden]="isHidden">Hidden or not</div>
 <option [selected]="isSelected" value="John">John</option>
 <p [style.color]="foreground">Friendship is Magic</p>
-<mn-player name="John"></ns-pony> //non dynamique
+<mn-player name="John"></ns-player> //non dynamique
 <mn-player name="{{player.fullName()}}"></mn-player>
 <mn-player [name]="player.fullName()"></mn-player>
 ```
@@ -2100,14 +2103,14 @@ Permet de créer une référence vers un composant :
 
 Version longue :
 ```html
-<template [ngIf]="races.length > 0">
-  <div><h2>Races</h2></div>
+<template [ngIf]="players.length > 0">
+  <div><h2>Players</h2></div>
 </template>
 ```
 
 Version courte :
 ```html
-<div *ngIf="races.length > 0"><h2>Races</h2></div>
+<div *ngIf="players.length > 0"><h2>Players</h2></div>
 ```
 
 ]
@@ -2142,8 +2145,8 @@ Version courte :
 #### Syntaxe canonique
 
 ```html
-<mn-player [name]="player.name"></ns-pony>
-<mn-player bind-name="player.name"></ns-pony>
+<mn-player [name]="player.name"></ns-player>
+<mn-player bind-name="player.name"></ns-player>
 
 <button (click)="onButtonClick()">Click me!</button>
 <button on-click="onButtonClick()">Click me!</button>
