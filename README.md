@@ -1,5 +1,5 @@
 
-![Google logo](presentation/images/angular.svg "Angular 2")
+![Google logo](https://raw.githubusercontent.com/Romakita/meetup-angular2/master/presentation/images/angular.svg)
 
 # Angular 2
 
