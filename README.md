@@ -1,10 +1,4 @@
-# Angular 2
-
-Formation Angular 2
-
-Utilisation de [remark](https://github.com/gnab/remark/wiki/Formatting#alignment)
-
-# Meetup Angular 2
+# Meetup Angular
 
 Fort de son expérience sur Angular 1, l'équipe de Google
 nous revient avec une version 2 revue en profondeur. Exit, le support des 
@@ -45,14 +39,14 @@ Vous pouvez récupérer le projet Monopoly relatif à cette présentation
 
 # Commande de présentation (remarkjs)
 
+Utilisation de [remark](https://github.com/gnab/remark/wiki/Formatting#alignment)
+
 * Pressing C will open a cloned view of the current slideshow in a new browser window.
 * Pressing P will toggle presenter mode.
 
 # Contributeurs
 
-* Nicolas Boe, 
-* Romain Lenzotti
+* [Romain Lenzotti](http://github.com/Romakita)
+* [Nicolas Boe](http://nicolas-boe.fr/)
+* [Valtech Training](http://www.valtech-training.fr/)
 
-# Licence
-
-Valtech Training
