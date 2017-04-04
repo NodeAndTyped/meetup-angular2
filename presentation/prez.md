@@ -441,7 +441,7 @@ Permet d'utiliser la liste des arguments **proprement**.
 var playersInGame = [];
 function addPlayers(players) {
   for (var i = 0; i < arguments.length; i++) {
-    playesInGame.push(arguments[i]);
+    playersInGame.push(arguments[i]);
   }
 }
 
