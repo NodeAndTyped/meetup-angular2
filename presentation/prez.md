@@ -1722,7 +1722,7 @@ Il y a toujours un module racine.
 **@NgModule** prends plusieurs paramètres :
 - `import`: importer d'autres modules Angular,
 - `declarations`: déclarer les composants qui appartiennent à notre module,
-- `bootstrap`: déclarer le composant racine (premier instancier).
+- `bootstrap`: déclarer le composant racine (premier instancié).
 ]
 .pull-right.margin-top-p30[
 ```typescript
@@ -2231,7 +2231,7 @@ template: splited-page
 - Http,
 - Router,
 - Location,
-- EventEmmitter.
+- EventEmitter.
 
 
 > .center[https://angular.io/docs/ts/latest/api/]
@@ -2738,12 +2738,15 @@ Il y a donc un cache qui est créé, d’où le nom, inline caching.
 
 .pull-right.margin-top-50[
 
-#### Exemple
 ```typescript
 Observable.range(1, 5)
   .map(x => x * 2)
   .filter(x => x > 5)
-  .subscribe(x => console.log(x), error => console.log(error), () => console.log('done'));
+  .subscribe(
+      x => console.log(x), 
+      error => console.log(error),
+       () => console.log('done')
+  );
 // 6, 8, 10, done
 ```
 
@@ -2884,7 +2887,7 @@ template: splited-page
 ]
 
 .pull-left[
-#### Pour se faire nPour se faire nous aurons besoin
+#### Pour se faire nous aurons besoin
 
 - D'instancier notre composant avec `TestComponentBuilder`,
 - De récupérer une représentation du composant `ComponentFixture`,
