@@ -1329,7 +1329,7 @@ Exemple pour angular 1
 
 #### Exemple Angular 2
 ``` typescript
-@Component({ selector: 'ns-home' })
+@Component({ selector: 'mn-home' })
 class HomeComponent {
 
   constructor(@Optional() hello: HelloService) {
@@ -1486,7 +1486,7 @@ export class GameComponent {
   <h2>Game</h2>
   <div>Nb players : {{ game.players.length }}</div>
   <div *ngFor="let player of game.players">
-    <nn-player [player]="playe"></nn-player>
+    <mn-player [player]="player"></mn-player>
   </div>
 </div>
 ```
@@ -1954,7 +1954,7 @@ export class AppModule {}
 ```typescript
 @Component({
     selector: "mn-app",
-    template: `<div><mn-board></mn-board>`
+    template: `<div><mn-board></mn-board></div>`
 })
 export class AppComponent {}  
 ```    
@@ -1996,7 +1996,7 @@ export class AppComponent {}
 <div [hidden]="isHidden">Hidden or not</div>
 <option [selected]="isSelected" value="John">John</option>
 <p [style.color]="foreground">Friendship is Magic</p>
-<mn-player name="John"></ns-player> //non dynamique
+<mn-player name="John"></mn-player> //non dynamique
 <mn-player name="{{player.fullName()}}"></mn-player>
 <mn-player [name]="player.fullName()"></mn-player>
 ```
@@ -2145,8 +2145,8 @@ Version courte :
 #### Syntaxe canonique
 
 ```html
-<mn-player [name]="player.name"></ns-player>
-<mn-player bind-name="player.name"></ns-player>
+<mn-player [name]="player.name"></mn-player>
+<mn-player bind-name="player.name"></mn-player>
 
 <button (click)="onButtonClick()">Click me!</button>
 <button on-click="onButtonClick()">Click me!</button>
