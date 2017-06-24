@@ -73,7 +73,7 @@ class: angular-react-bg
    - Le premier framework,
    - MVVM,
    - Des controleurs, directives, services, etc...
-   - Two data-binding,
+   - Two-way data-binding,
    - Les tests unitaires !
  ]
   
@@ -861,7 +861,7 @@ class: end-chapter
 .end-chapter-body[
 # Conclusion
 
-Faite du ES6 et un coup de transpileur dans votre processus de build.
+Faites du ES6 et un coup de transpileur dans votre processus de build.
 ]
 
 ]
@@ -957,7 +957,7 @@ tsc.cmd test.ts
 - **Mix** : number | boolean
 
 
->.center[Les **basics** peuvent être défini à l'initialisation !]
+>.center[Les **basics** peuvent être définis à l'initialisation !]
 
 ]
 
@@ -2308,7 +2308,7 @@ template: splited-page
 ]
 
 .pull-left[
-- Le "tuyaux" vient de l'utilisation du caractère `|`,
+- Le "tuyau" vient de l'utilisation du caractère `|`,
 - Ils sont utilisables directement dans le html,
 - Ainsi que dans le code (injectable),
 - Ils sont chaînables,
@@ -2441,9 +2441,7 @@ Il y aura trois étapes à réaliser :
 ```typescript
 @Component({
   selector: 'mn-players',
-  template: '<mn-player *ngFor="let player of players"
-                        [player]="player"
-                        (click)="onPlayerClicked(player)"></mn-player>'
+  template: '<div (click)="onPlayerClicked(player)">Show {{player.name}}</div>'
 })
 export class PlayersComponent {
 
@@ -2451,7 +2449,7 @@ export class PlayersComponent {
   private players: IPlayer[];
 
   @Output()
-  private playerClicked: EventEmitter<IPlayer> = new EventEmitter<IPlayer>();
+  private onClickPlayer: EventEmitter<IPlayer> = new EventEmitter<IPlayer>();
 
   private onPlayerClicked(player: IPlayer) {
     this.playerClicked.emit(player);
@@ -2459,12 +2457,18 @@ export class PlayersComponent {
 }
 ```
 
-#### Pendant ce temps...
-
 ```typescript
-<mn-players [players]="players" 
-            (onPlayerClicked)="playerClicked($event)">
-</mn-players>
+@Component({
+  selector: 'mn-app',
+  template: `<mn-players [players]="players" 
+                         (onClickPlayer)="alertPlayer($event)">
+             </mn-players>`
+})
+export class AppComponent {
+   private alertPlayer(player: IPlayer) {
+       
+   }
+}
 ```
 ]
 
