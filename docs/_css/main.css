@@ -1,0 +1,79 @@
+.app-nav a.logo {
+    float: left;
+    z-index: 1;
+    height: 20px;
+    display: block;
+    margin-top: -10px;
+}
+.app-nav a.logo {
+    color: #1a1a1a;
+    font-size: 1.6rem;
+}
+.app-nav a.logo span {
+    margin-left: 10px;
+    color:white;
+}
+.app-nav a.logo img {
+    width: 200px;
+    color: white;
+}
+
+section.cover {
+    overflow: hidden;
+    color: white;
+    background: linear-gradient(145deg,#0d47a1,#42a5f5) !important;
+    border-bottom: 1px solid #CCC;
+}
+
+section.cover blockquote {
+    color: #00bdfa;
+}
+
+section.cover h1 .anchor span {
+    color: white
+}
+
+section.cover .cover-main > p:last-child a {
+    border-color: white;
+    color: white
+}
+
+section.cover .cover-main > p:last-child a:hover {
+    background: white;
+    color: #337ab7;
+}
+
+section.cover .cover-main > p:last-child a:last-child {
+    color: #1976d2;
+    border-color: white;
+    background-color: white;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+}
+
+section.cover .cover-main > p:last-child a:last-child:hover {
+    color: #1976d2;
+}
+
+.github-corner svg {
+    color: white;
+    fill: #1976d2;
+    fill: var(--theme-color, #1976d2);
+    height: 80px;
+    width: 80px;
+}
+
+.authors {
+    text-align: center;
+}
+.authors-badge {
+    display: inline-block;
+    width: 200px;
+    margin:20px;
+}
+.authors-badge img {
+    border-radius: 100%;
+    overflow: hidden;
+    display: block;
+    width:100%;
+    margin-bottom: 20px;
+}

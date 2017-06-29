@@ -20,9 +20,9 @@ ensemble autour de ce programme :
     * Les concepts (Pipe, Components, Services, Programmation reactive)
  * Outillage et industrialisation
 
-Durée : 3H
+**Durée :** 3H
 
-Présentation le : 4 octobre 2016
+**Présentation le :** 4 octobre 2016
 
 ## Slides
 
@@ -30,7 +30,7 @@ Les slides sont disponibles sur cette [page](presentation.md)
 
 ## Démonstration
 
-Exemple de code ES6 et Typescript dans le dossier [`demos`](https://github.com/NodeAndTyped/meetup-angular/tree/master/demos).
+Exemple de code ES6 et Typescript dans le dossier [demos](https://github.com/NodeAndTyped/meetup-angular/tree/master/demos).
 
 ## Application Angular 2
 
@@ -39,8 +39,17 @@ Vous pouvez récupérer le projet Monopoly relatif à cette présentation
 
 ## Auteurs
 
-* [Romain Lenzotti](https://github.com/Romakita) - Tech Lead Front-End,
-* [Nicolas Boe](http://nicolas-boe.fr/) - Consultant FullStack,
+<div class="authors">
+ <div class="authors-badge">
+   <img src="_media/5919b05a05f7261258d2ef00.jpg">
+    [Romain Lenzotti](https://github.com/Romakita) - Tech Lead Front-End
+   </div>
+   <div class="authors-badge">
+   <img src="_media/58f8d07005f7260dc8c39c8e.jpg">
+    [Nicolas Boe](http://nicolas-boe.fr/) - Consultant FullStack
+   </div>
+   </div>
+</div>
 
 
 ## Organisation
