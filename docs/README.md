@@ -35,7 +35,7 @@ Exemple de code ES6 et Typescript dans le dossier [demos](https://github.com/Nod
 ## Application Angular 2
 
 Vous pouvez récupérer le projet Monopoly relatif à cette présentation
-à cette adresse [https://github.com/romakita/ng2-monopoly](https://github.com/romakita/ng2-monopoly).
+à sur [https://github.com/romakita/ng2-monopoly](https://github.com/romakita/ng2-monopoly).
 
 ## Auteurs
 
