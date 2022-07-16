@@ -26,11 +26,11 @@ Présentation le : 4 octobre 2016
 
 ## Slides
 
-Les slides sont disponibles sur cette [page](presentation.md)
+Les slides sont disponibles sur cette [page](https://nodelabs.github.io/meetup-angular/)
 
 ## Démonstration
 
-Exemple de code ES6 et Typescript dans le dossier [`demos`](https://github.com/NodeAndTyped/meetup-angular/tree/master/demos).
+Exemple de code ES6 et Typescript dans le dossier [`demos`](https://github.com/nodelabs/meetup-angular/tree/master/demos).
 
 ## Application Angular 2
 
